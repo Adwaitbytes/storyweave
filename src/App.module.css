@@ -1,0 +1,27 @@
+.app {
+  @apply bg-gray-900 min-h-screen text-white;
+  background: linear-gradient(45deg, #0d1b2a, #415a77);
+  animation: glow 10s ease infinite;
+}
+.header {
+  @apply text-4xl text-blue-400 text-center py-4 font-bold;
+}
+.editor {
+  @apply flex p-4;
+}
+.sidebar {
+  @apply w-1/4 p-4 bg-gray-800 rounded-lg;
+}
+.item {
+  @apply p-2 m-2 bg-blue-600 rounded cursor-move;
+}
+.canvas {
+  @apply w-3/4 h-96 bg-gray-700 rounded-lg p-4;
+}
+.droppedItem {
+  @apply p-2 m-2 bg-blue-500 rounded;
+}
+@keyframes glow {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
